@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * print_diagonal - print character "\" n times
- * @n: number of characters to draw
+ * print_square - print a square of #'s given size
+ * @size: size to draw
  */
 
-void print_diagonal(int n)
+void print_square(int size)
 {
-	int draw;
-	int space;
+	int row, column;
 
-	if (n > 0)
+	if (size > 0)
 	{
-		for (draw = 1; draw <= n; draw++)
+		for (row = 1; row <= size; row++)
 		{
-			for (space = 1; space < draw; space++)
-				_putchar(' ');
-			_putchar('\\');
+			for (column = 1; column <= size; column++)
+			{
+				_putchar('#');
+			}
 			_putchar('\n');
 		}
 	}
