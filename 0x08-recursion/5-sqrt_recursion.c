@@ -13,7 +13,7 @@ int _sqrt_root(int n, int root)
 
 	else if (root * root == n)
 		return (root);
-	else
+
 
 		return (_sqrt_root(n, root + 1));
 }
@@ -28,7 +28,6 @@ int _sqrt_root(int n, int root)
 {
 	if (n < 0)
 		return (-1);
-	else
 
 		return (_sqrt_root(n, 0));
 }
