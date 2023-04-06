@@ -15,7 +15,7 @@ int _sqrt_root(int n, int root)
 		return (root);
 
 
-		return (_sqrt_root(n, root + 1));
+	return (_sqrt_root(n, root + 1));
 }
 
 /**
@@ -29,5 +29,5 @@ int _sqrt_root(int n, int root)
 	if (n < 0)
 		return (-1);
 
-		return (_sqrt_root(n, 0));
+	return (_sqrt_root(n, 0));
 }
