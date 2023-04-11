@@ -18,6 +18,8 @@ char *_strdup(char *str)
 	{
 	}
 	ptr = malloc((a + 1) * sizeof(char));
+	if (ptr == NULL)
+	return (0);
 	for (b = 0; b <= a; b++)
 	{
 	ptr[b] = str[b];
