@@ -10,10 +10,6 @@ char *str_concat(char *s1, char *s2)
 int i, j, a, b;
 char *z;
 
-if (s1 == NULL && s2 == NULL)
-{
-return (0);
-}
 for (i = 0; s1[i] != '\0'; i++)
 {
 }
@@ -34,7 +30,10 @@ for (b = 0; b < j; b++)
 z[a] = s2[b];
 a++;
 }
+if ((s1 == NULL && s2 != NULL) || (s1 != NULL && s2 == NULL))
+{
 z[a] = '\0';
 return (z);
 }
-
+return (z);
+}
