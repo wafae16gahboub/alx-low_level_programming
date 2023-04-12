@@ -38,6 +38,7 @@ for (b = 0; b < j; b++)
 z[a] = s2[b];
 a++;
 }
+z[a] = '\0';
 return (z);
 }
 
