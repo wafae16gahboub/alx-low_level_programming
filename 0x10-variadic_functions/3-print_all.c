@@ -9,16 +9,18 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char typ = ' ';
 	char *str;
-
 	va_list args;
 
 	va_start(args, format);
+	while (format == NULL)
+	{
+		printf("\n");
+		return;
+	}
 	while (format[i])
 	{
-		typ = format[i];
-		switch (typ)
+		switch (format[i])
 		{
 		case 99:
 			printf("%c", (char) va_arg(args, int));
@@ -39,8 +41,8 @@ void print_all(const char * const format, ...)
 			printf("%s", str);
 			break;
 		}
-		if ((typ == 99 || typ == 102 || typ == 105 ||
-					typ == 115) && format[(i + 1)] != '\0')
+		if ((format[i] == 99 || format[i] == 102 || format[i] == 105 ||
+					format[i] == 115) && format[(i + 1)] != '\0')
 			printf(", ");
 		i++;
 	}
