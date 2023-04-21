@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 			break;
 		case 115:
 			str = (char *) va_arg(args, char *);
-			if (!str)
+			if (str == NULL)
 			{
 				printf("(nil)");
 				break;
