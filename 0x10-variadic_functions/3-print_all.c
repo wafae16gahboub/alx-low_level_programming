@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include "variadic_functions.h"
 /**
  * print_all - function that prints anything
  * @format: types in string
@@ -13,7 +14,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 
 	va_start(args, format);
-	while (format[i] != '\0')
+	while (format[i])
 	{
 		typ = format[i];
 		switch (typ)
