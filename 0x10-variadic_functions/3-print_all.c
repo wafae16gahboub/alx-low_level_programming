@@ -20,7 +20,7 @@ void print_all(const char * const format, ...)
 		switch (typ)
 		{
 		case 99:
-			putchar((char) va_arg(args, int));
+			printf("%c", (char) va_arg(args, int));
 			break;
 		case 105:
 			printf("%d", va_arg(args, int));
