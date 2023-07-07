@@ -1,0 +1,6 @@
+[master 79c3f60] 2.
+ 4 files changed, 39 insertions(+)
+ create mode 100644 0x1A-hash_tables/2-key_index.c
+ create mode 100644 0x1A-hash_tables/2-main.c
+ create mode 100755 0x1A-hash_tables/c
+ create mode 100644 0x1A-hash_tables/index
